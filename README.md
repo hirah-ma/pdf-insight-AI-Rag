@@ -2,9 +2,9 @@
 
 An intelligent PDF document analyzer powered by Google's Gemini AI. This application allows users to upload PDF documents and get instant, accurate answers to their questions about the content.
 
-## Demo Video
+## Demo
 
-![Demo Video](video/insightpdf_video.mp4)
+![Demo](video/v1.gif)
 
 ## Features
 
