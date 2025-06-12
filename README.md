@@ -1,87 +1,110 @@
-# PDF Insight AI
+📚 PDF Insight AI
 
-An intelligent PDF document analyzer powered by Google's Gemini AI. This application allows users to upload PDF documents and get instant, accurate answers to their questions about the content.
+An intelligent PDF document analyzer powered by Google's Gemini AI + LangChain. This application allows users to upload PDF documents and get instant, accurate answers to their questions about the content.
 
-## Demo
+---
 
-![Demo](video/v1.gif)
+## 🌟 Demo
 
-## Features
+![PDF Insight AI Demo](video/v1.gif)
+![LangChain Architecture](video/arch_animation.gif)
+![User Interaction](video/chatflow.gif)
 
-- 📄 Process multiple PDF files simultaneously
-- 🔍 Smart document analysis using RAG (Retrieval-Augmented Generation)
-- 💡 Instant answers to your questions
-- 🎯 Context-aware responses
-- 🔒 Secure document processing
+---
 
-## Prerequisites
+## 🚀 Skills & Technologies Showcased
+
+### 🧠 AI & LLMs
+- Retrieval-Augmented Generation (RAG) using LangChain
+- Prompt engineering and context-aware Gemini Pro models
+- Conversational agents with **Gemini 2.0 Flash**
+- AI-powered **vector search** using FAISS
+
+### 📚 Document Intelligence
+- Text extraction using **PyPDF2**
+- Recursive chunking with **LangChain TextSplitter**
+- Embeddings via `GoogleGenerativeAIEmbeddings`
+
+### ⚙️ Full Stack Development
+- Interactive **Streamlit** UI for seamless user interaction
+- Environment variable handling with **dotenv**
+- Efficient session management using `st.session_state`
+- Clean modular structure: `utils/pdf_processor.py`, `utils/ai_model.py`
+
+### 🛡️ Security and Best Practices
+- 🔐 API key management using `.env`
+- 🔒 Secure, local-only document processing
+- 📁 Vector DB saved and loaded locally with safe deserialization
+
+---
+
+## 🛠️ Features
+
+- 📄 Process multiple PDF files
+- 🔍 Smart document chunking and storage
+- 💬 Ask questions about the uploaded content
+- ⚡ Instant response with context-aware accuracy
+- 🎯 RAG-based querying using Gemini
+- 💾 Save and reload vector database
+
+---
+
+## 📦 Prerequisites
 
 - Python 3.8 or higher
-- Google API key (Gemini)
+- Google API Key
 
-## Installation
+---
 
-1. Clone the repository:
+## 📥 Installation
+
 ```bash
 git clone https://github.com/yourusername/pdf-insight-ai.git
 cd pdf-insight-ai
-```
-
-2. Install dependencies:
-```bash
 pip install -r requirements.txt
 ```
 
-3. Create a `.env` file in the root directory and add your Google API key:
-```
+Add your API key to `.env`:
+```env
 GOOGLE_API_KEY=your_google_api_key_here
 ```
 
-## Usage
+---
 
-1. Start the application:
+## ▶️ Usage
+
 ```bash
 streamlit run src/app.py
 ```
 
-2. Open your browser and navigate to `http://localhost:8501`
+Then go to [http://localhost:8501](http://localhost:8501)
 
-3. Upload your PDF documents using the sidebar
+---
 
-4. Click "Process Documents" to analyze the content
-
-5. Ask questions about your documents in the chat interface
-
-## Project Structure
+## 🧾 Project Structure
 
 ```
 pdf-insight-ai/
 ├── src/
 │   ├── utils/
-│   │   ├── __init__.py
 │   │   ├── pdf_processor.py
 │   │   └── ai_model.py
 │   └── app.py
 ├── data/
 │   └── vector_store/
 ├── video/
-│   └── insightpdf_video.mp4
+│   ├── v1.gif
+│   ├── arch_animation.gif
+│   └── chatflow.gif
 ├── .env
-├── .gitignore
 ├── requirements.txt
 └── README.md
 ```
 
-## Security
+---
 
-- API keys are stored in environment variables
-- PDF processing is done locally
-- No data is stored permanently
+## 🤝 Contributing
 
-## Contributing
+Contributions, feedback, and forks are welcome!
 
-Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details. 
